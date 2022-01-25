@@ -1,6 +1,4 @@
-#ifdef iyua
-    #include "iyua.h"
-#endif
+#include <bits/stdc++.h>
 
 namespace Math {
     constexpr int Mod = 998244353;

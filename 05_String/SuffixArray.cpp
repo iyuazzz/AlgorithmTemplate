@@ -1,6 +1,4 @@
-#ifdef iyua
-    #include "iyua.h"
-#endif 
+#include <bits/stdc++.h>
 
 struct SuffixArray {
     /*

@@ -1,0 +1,31 @@
+syntax on
+set nu
+set autoindent
+set tabstop=4
+set showmatch
+set shiftwidth=4
+set cin
+set mouse=a
+set expandtab
+
+inoremap ( ()<Esc>i
+inoremap [ []<Esc>i
+inoremap { {}<Esc>i
+inoremap " ""<Esc>i
+inoremap ' ''<Esc>i
+
+set clipboard=unnamed
+set clipboard=unnamedplus
+set clipboard=unnamed,unnamedplus
+
+map <F3> : call CopyToWindows()<CR>
+map! <F3> <ESC> : call CopyToWindows()<CR>
+func! CopyToWindows()
+	exec "w"
+	exec "!cat % |/mnt/c/Windows/System32/clip.exe"
+endfunc
+map <F1> :call CRr()<CR>
+func CRr()
+	exec "w"
+	exec "!clear && g++ % -std=c++17 -W -o a && ./a"
+endfunc

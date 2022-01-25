@@ -1,6 +1,4 @@
-#ifdef iyua
-    #include "iyua.h"
-#endif
+#include <bits/stdc++.h>
 //  should first  Poly::init_w(L);
 //  (1 << L) should bigger than poly'len   (n + m - 1)
 using poly = std::vector<int>;

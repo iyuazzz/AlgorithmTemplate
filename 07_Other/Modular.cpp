@@ -1,6 +1,4 @@
-#ifdef iyua
-    #include "iyua.h"
-#endif
+#include <bits/stdc++.h>
 
 using ll = long long;
 constexpr int MOD = 1e9 + 7;
